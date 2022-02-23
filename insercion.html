@@ -19,25 +19,25 @@
                     <h1 class="text-center py-3 text-danger">Inserción de datos</h1>
                     <!-- introducción de nombre con efecto placeholder -->
                     <div class="mb-3">
-                        <label for="nombreHelp" class="form-label">Nombre *</label>
+                        <label for="nombreHelp" class="form-label text-light">Nombre *</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" 
                         placeholder="Dame tu nombre" required>
                     </div>
                     <!-- introducción de apellidos con label y aclaración por debajo -->
                     <div class="mb-3">
-                        <label for="apellidos" class="form-label">Apellidos *:</label>
+                        <label for="apellidos" class="form-label text-light">Apellidos *:</label>
                         <input type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp" placeholder="Di tus apellidos" required>
-                        <div id="apellidosHelp" class="form-text text-dark display-6">Campo obligatorio</div>
+                        <div id="apellidosHelp" class="form-text text-light display-6">Campo obligatorio</div>
                     </div>
                     <!-- campo de tipo number con un mínimo y un máximo -->
                     <div class="mb-3">
-                        <label for="codpostal" class="form-label">Código Postal *:</label>
+                        <label for="codpostal" class="form-label text-light">Código Postal *:</label>
                         <input type="number" min="10000" max="29999" class="form-control" id="codpostal" name="codpostal" aria-describedby="codpostalHelp" placeholder="Ej:14500" required> 
-                        <div id="codpostalHelp" class="form-text text-dark display-5">Campo obligatorio</div>
+                        <div id="codpostalHelp" class="form-text text-light display-5">Campo obligatorio</div>
                     </div>
                     <!-- vamos a incluir un campo desplegable de opciones (select) -->
                     <div class="mb-3">
-                        <label for="provincia" class="form-label">Provincia *:</label>
+                        <label for="provincia" class="form-label text-light">Provincia *:</label>
                         <!-- para validar que verdaderamente se elije una de las opciones
                              y no se envía sin más, se debe evaluar con javascript-->
                             <select class="form-select" aria-label="Selecciona provincia"
@@ -53,7 +53,7 @@
                     </div>
                     <!-- campo de texto. No se suele validar -->
                     <div class="mb-3">
-                        <label for="comentario">Comentario</label>
+                        <label for="comentario" class="text-light">Comentario</label>
                         <textarea class="form-control" placeholder="Deja aquí un comentario" id="comentario" name="comentario"></textarea>
                         
                       </div>
@@ -66,7 +66,7 @@
 
                       <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="mayoredad" name="mayoredad">
-                        <label class="form-check-label" for="mayoredad">Mayor de edad</label>
+                        <label class="form-check-label text-light" for="mayoredad">Mayor de edad</label>
                       </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>

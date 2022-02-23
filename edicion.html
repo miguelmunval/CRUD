@@ -30,20 +30,20 @@
                     </div>
                     <!-- introducción de apellidos -->
                     <div class="mb-3">
-                        <label for="apellidos" class="form-label">Apellidos *:</label>
+                        <label for="apellidos" class="form-label text-light">Apellidos *:</label>
                         <input type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp" value="Urbano" required>
-                        <div id="apellidosHelp" class="form-text text-dark display-6">Campo obligatorio</div>
+                        <div id="apellidosHelp" class="form-text text-dark display-6 text-light">Campo obligatorio</div>
                     </div>
                     <!-- campo de tipo numero con mínimo y máximo -->
                     <div class="mb-3">
-                        <label for="codpostal" class="form-label">Código Postal *:</label>
+                        <label for="codpostal" class="form-label text-light">Código Postal *:</label>
                         <input type="number" min="10000" max="29999" class="form-control" id="codpostal" name="codpostal" aria-describedby="codpostalHelp" 
                         value="14548" required> 
-                        <div id="codpostalHelp" class="form-text text-dark display-6">Campo obligatorio</div>
+                        <div id="codpostalHelp" class="form-text text-dark display-6 text-light">Campo obligatorio</div>
                     </div>
                     <!-- desplegable de opciones -->
                     <div class="mb-3">
-                        <label for="provincia" class="form-label">Provincia *:</label>
+                        <label for="provincia" class="form-label text-light">Provincia *:</label>
                         <!-- se tiene que evaluar mediante javascript si está relleno -->
                         <select class="form-select" aria-label="Selecciona provincia"
                          id="provincia" name="provincia">
@@ -58,14 +58,14 @@
                     </div>
                     <!-- campo de texto. No se suele validar -->
                     <div class="mb-3">
-                        <label for="comentario">Comentario</label>
+                        <label for="comentario" class="text-light">Comentario</label>
                         <textarea class="form-control" placeholder="Deja aquí un comentario" id="comentario" name="comentario"
                         value="mi comentario almacenado"></textarea>
                     </div>
                       <!-- En caso de ser obligatorio se controla desde javascript -->
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="mayoredad" name="mayoredad" checked>
-                        <label class="form-check-label" for="mayoredad">Mayor de edad</label>
+                        <label class="form-check-label text-light" for="mayoredad">Mayor de edad</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
