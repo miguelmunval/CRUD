@@ -1,1 +1,4 @@
 textarea {height:200px !important;} /*el important es para sobreescribir cualquier prioridad que haya */
+#formulario {
+  border-radius: 50px;
+}
