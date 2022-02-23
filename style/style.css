@@ -4,6 +4,7 @@
 }
 body{
   font-family: form;
+  background-image: url(../images/fondo.jpg);
 }
 textarea {height:200px !important;} /*el important es para sobreescribir cualquier prioridad que haya */
 #formulario {
@@ -11,4 +12,5 @@ textarea {height:200px !important;} /*el important es para sobreescribir cualqui
 }
 #wrapper {
   background-image: url(../images/fondo.jpg);
+  height: 100vh;
 }

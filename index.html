@@ -20,19 +20,15 @@
             <form class=" p-5 border needs-validation border-info" id="formulario" novalidate action="consulta.html">
                 <h1 class="py-3 text-center text-danger">Inicio de Sesión</h1>
                 <div class="from-group align-items-center mb-3">
-                    <label for="identificador" class="form-label text-light">Usuario:</label>
-                    <input type="text" class="form-control" id="identificador" name="identificador" aria-describedby="identificadorHelp"
-                    placeholder="Introduzca el Usuario">
-                    <div class="invalid-feedback">
-                        Este campo es obligatorio
-                    </div>
+                    <label for="usuario" class="form-label text-light">Usuario:</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="usuarioHelp"
+                    placeholder="Introduzca el Usuario" required>
+                    
                 </div>
                 <div class="from-group mb-3"> 
                     <label for="pass" class="form-label text-light">Contraseña:</label>
-                    <input type="password" class="form-control" id="pass" name="pass" placeholder="Introduzca su Contraseña(mayúsculas, minúsculas y números)" aria-describedby="passHelp">
-                    <div class="invalid-feedback">
-                        Este campo es obligatorio
-                    </div>
+                    <input type="password" class="form-control" id="pass" name="pass" placeholder="Introduzca su Contraseña(mayúsculas, minúsculas y números)" aria-describedby="passHelp" required>
+                    
                 </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                     <a href="insercion.html"  class="btn btn-primary">Registrarse</a>
