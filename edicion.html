@@ -10,12 +10,6 @@
     <link rel="shortcut icon" href="./images/bust-in-silhouette-facebook.png" type="image/x-icon">
 </head> 
 <body class="bg-dark">
-    <!-- editar consiste en:
-         1. elegir por clave primaria la fila de la tabla a modificar
-         2. los datos de esa fila, se recuperan de la BD y se cargan en los atributos value de cada campo input (los select aparecerían como selected y los checkbox, serían checked)
-         3. el usuario modifica el o los campos que desee cambiar
-         4. pulsa el botón enviar, y se activa el action del formulario, que no es el mismo que en insertar
-         5. ese action, en este caso lo que hace es un update sobre la base -->
     <div id="wrapper" class="container p-4 vh-100">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-lg-6 m-auto">
@@ -56,7 +50,7 @@
                             <option value="almeria">Sevilla</option>
                         </select>
                     </div>
-                    <!-- campo de texto. No se suele validar -->
+                    <!-- campo de texto. No se valida -->
                     <div class="mb-3">
                         <label for="comentario" class="text-light">Comentario</label>
                         <textarea class="form-control" placeholder="Deja aquí un comentario" id="comentario" name="comentario"

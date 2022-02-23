@@ -14,32 +14,31 @@
         
         <div class="row">
             <div class="col-xs-12 col-md-8 col-lg-6 m-auto">
-        <!-- formulario de bootstrap -->
+            <!-- formulario -->
                 <form method="post" action="..." id="formulario" class="border border-info p-5">
                     <h1 class="text-center py-3 text-danger">Inserción de datos</h1>
-                    <!-- introducción de nombre con efecto placeholder -->
+                    <!-- introducción de nombre -->
                     <div class="mb-3">
                         <label for="nombreHelp" class="form-label text-light">Nombre *</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" 
                         placeholder="Dame tu nombre" required>
                     </div>
-                    <!-- introducción de apellidos con label y aclaración por debajo -->
+                    <!-- introducción de apellidos -->
                     <div class="mb-3">
                         <label for="apellidos" class="form-label text-light">Apellidos *:</label>
                         <input type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp" placeholder="Di tus apellidos" required>
                         <div id="apellidosHelp" class="form-text text-light display-6">Campo obligatorio</div>
                     </div>
-                    <!-- campo de tipo number con un mínimo y un máximo -->
+                    <!-- campo de tipo numero con mínimo y máximo -->
                     <div class="mb-3">
                         <label for="codpostal" class="form-label text-light">Código Postal *:</label>
                         <input type="number" min="10000" max="29999" class="form-control" id="codpostal" name="codpostal" aria-describedby="codpostalHelp" placeholder="Ej:14500" required> 
                         <div id="codpostalHelp" class="form-text text-light display-5">Campo obligatorio</div>
                     </div>
-                    <!-- vamos a incluir un campo desplegable de opciones (select) -->
+                    <!-- desplegable de opciones -->
                     <div class="mb-3">
                         <label for="provincia" class="form-label text-light">Provincia *:</label>
-                        <!-- para validar que verdaderamente se elije una de las opciones
-                             y no se envía sin más, se debe evaluar con javascript-->
+                        <!-- se tiene que evaluar mediante javascript si está relleno -->
                             <select class="form-select" aria-label="Selecciona provincia"
                                 id="provincia" name="provincia">
                                 <option selected>--Selecciona provincia</option>
@@ -51,18 +50,14 @@
                                 <option value="almeria">Sevilla</option>
                             </select>
                     </div>
-                    <!-- campo de texto. No se suele validar -->
+                    <!-- campo de texto. No se valida -->
                     <div class="mb-3">
                         <label for="comentario" class="text-light">Comentario</label>
                         <textarea class="form-control" placeholder="Deja aquí un comentario" id="comentario" name="comentario"></textarea>
                         
                       </div>
 
-                      <!-- campo booleano, casilla de verificación
-                           suele ir asociado con un dato verdadero/falso o
-                           con una aceptación de condiciones EN CUYO CASO, 
-                           SE CONTROLARÍA LA OBLIGATORIEDAD DE MARCARLA
-                           DESDE JAVASCRIPT -->
+                      <!-- En caso de ser obligatorio se controla desde javascript -->
 
                       <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="mayoredad" name="mayoredad">
@@ -70,7 +65,7 @@
                       </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
-                <!-- fin de formulario de bootstrap -->
+                <!-- fin de formulario -->
              </div><!-- final del div col -->
          </div><!-- final del div row-->
      </div><!-- final del div container -->
