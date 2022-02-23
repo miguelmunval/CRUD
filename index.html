@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="./images/bust-in-silhouette-facebook.png" type="image/x-icon">
 </head> 
 <body class="bg-dark">
-    <div class="container bg-light vh-100">
+    <div class="container vh-100" id="wrapper">
        
        <!-- formulario de login-->
        <div class="row d-flex justify-content-center vh-100 align-items-center">
@@ -22,12 +22,12 @@
                 <!-- hay 2 formas principales de enviar los datos de un formulario, dos métodos: get y post-->
                 <h1 class="py-3 text-center text-danger">Inicio de Sesión</h1>
                 <div class="align-items-center mb-3">
-                    <label for="identificador" class="form-label">Usuario:</label>
+                    <label for="identificador" class="form-label text-light">Usuario:</label>
                     <input type="text" class="form-control" id="identificador" name="identificador" aria-describedby="identificadorHelp"
                     placeholder="Cuidado con las mayúsculas">
                 </div>
                 <div class="mb-3"> 
-                    <label for="pass" class="form-label ">Contraseña:</label>
+                    <label for="pass" class="form-label text-light">Contraseña:</label>
                     <input type="password" class="form-control" id="pass" name="pass" placeholder="Introduzca su Contraseña(mayúsculas, minúsculas y números)"
                     aria-describedby="passHelp">
                 </div>

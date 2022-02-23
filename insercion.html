@@ -10,16 +10,16 @@
     <link rel="shortcut icon" href="./images/bust-in-silhouette-facebook.png" type="image/x-icon">
 </head> 
 <body class="bg-dark">
-    <div id="wrapper" class="container bg-light p-5">
+    <div id="wrapper" class="container p-4 vh-100">
         
         <div class="row">
             <div class="col-xs-12 col-md-8 col-lg-6 m-auto">
         <!-- formulario de bootstrap -->
-                <form method="post" action="..." id="formulario" class="border border-info p-4">
+                <form method="post" action="..." id="formulario" class="border border-info p-5">
                     <h1 class="text-center py-3 text-danger">Inserción de datos</h1>
                     <!-- introducción de nombre con efecto placeholder -->
                     <div class="mb-3">
-                        <label for="nombreHelp" class="form-label">Nombre *:</label>
+                        <label for="nombreHelp" class="form-label">Nombre *</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" 
                         placeholder="Dame tu nombre" required>
                     </div>
@@ -27,13 +27,13 @@
                     <div class="mb-3">
                         <label for="apellidos" class="form-label">Apellidos *:</label>
                         <input type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp" placeholder="Di tus apellidos" required>
-                        <div id="apellidosHelp" class="form-text">Campo obligatorio</div>
+                        <div id="apellidosHelp" class="form-text text-dark display-6">Campo obligatorio</div>
                     </div>
                     <!-- campo de tipo number con un mínimo y un máximo -->
                     <div class="mb-3">
                         <label for="codpostal" class="form-label">Código Postal *:</label>
                         <input type="number" min="10000" max="29999" class="form-control" id="codpostal" name="codpostal" aria-describedby="codpostalHelp" placeholder="Ej:14500" required> 
-                        <div id="codpostalHelp" class="form-text">Campo obligatorio</div>
+                        <div id="codpostalHelp" class="form-text text-dark display-5">Campo obligatorio</div>
                     </div>
                     <!-- vamos a incluir un campo desplegable de opciones (select) -->
                     <div class="mb-3">

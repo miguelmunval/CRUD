@@ -2,3 +2,6 @@ textarea {height:200px !important;} /*el important es para sobreescribir cualqui
 #formulario {
   border-radius: 50px;
 }
+#wrapper {
+  background-image: url(../images/fondo.jpg);
+}
