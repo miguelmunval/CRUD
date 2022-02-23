@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./images/bust-in-silhouette-facebook.png" type="image/x-icon">
+    <script src="./javascript/inicio.js"></script>
 </head> 
 <body class="bg-dark">
     <div class="container vh-100" id="wrapper">
@@ -16,17 +17,22 @@
        <div class="row d-flex justify-content-center vh-100 align-items-center">
          <div class="col-xs-12 col-md-8 col-lg-6 w-75">
             <!-- aquí empieza el formulario bootstrap-->
-            <form class=" p-5 border border-info" id="formulario" action="" method="post">
+            <form class=" p-5 border needs-validation border-info" id="formulario" novalidate action="consulta.html">
                 <h1 class="py-3 text-center text-danger">Inicio de Sesión</h1>
-                <div class="align-items-center mb-3">
+                <div class="from-group align-items-center mb-3">
                     <label for="identificador" class="form-label text-light">Usuario:</label>
                     <input type="text" class="form-control" id="identificador" name="identificador" aria-describedby="identificadorHelp"
-                    placeholder="Cuidado con las mayúsculas">
+                    placeholder="Introduzca el Usuario">
+                    <div class="invalid-feedback">
+                        Este campo es obligatorio
+                    </div>
                 </div>
-                <div class="mb-3"> 
+                <div class="from-group mb-3"> 
                     <label for="pass" class="form-label text-light">Contraseña:</label>
-                    <input type="password" class="form-control" id="pass" name="pass" placeholder="Introduzca su Contraseña(mayúsculas, minúsculas y números)"
-                    aria-describedby="passHelp">
+                    <input type="password" class="form-control" id="pass" name="pass" placeholder="Introduzca su Contraseña(mayúsculas, minúsculas y números)" aria-describedby="passHelp">
+                    <div class="invalid-feedback">
+                        Este campo es obligatorio
+                    </div>
                 </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                     <a href="insercion.html"  class="btn btn-primary">Registrarse</a>
